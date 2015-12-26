@@ -12,7 +12,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 More details about the experiment and data is available at <BR> http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
 ## Packages  
-For successful execution of these scripts plyr and dplyr packages are required to be installed.  
+For successful execution of the script plyr and dplyr packages are required to be installed.  
 If they are not installed, install the two packages using following commands in R:  
     &nbsp;&nbsp;&nbsp;&nbsp; `install.packages("plyr")`   
     &nbsp;&nbsp;&nbsp;&nbsp; `install.packages("dplyr")`    
@@ -27,7 +27,7 @@ If they are not installed, install the two packages using following commands in 
     
 ## 
 ##Steps to create data sets
-1.  Download the git repo.   
+1.  Download the git repo from https://github.com/Jimpats/GettingAndCleaningData.git      
 2.  Set working directory to the directory where run_analysis.R is download from git.    
 3.  If the Samsung data does not exist in code directory in directory named "UCI HAR Dataset" then script downloads the data from intenet(active internet connection is required in that case).   
 3.  Execute `run_analysis.R`    
@@ -46,31 +46,41 @@ Some helpful text is displayed on the screen when script is executed.
 On R prompt from working directory execute `source ("run_analysis.R")`
 
 If the data set is not present in same directory as `run_analysis.R` then first line of output will be:    
-`Downloading and extracting raw data set from internet ...  `   
+```
+>source("run_analysis.R")  
+   
+Downloading and extracting raw data set from internet ...     
+Reading and merging the data sets ...   
+ ...  
+ ...  
+ 
+```   
 
-Output from the command should look like:
-> source("run_analysis.R")  
+Otherwise the output from the command should look like:
+```
+>source("run_analysis.R")  
 
 Reading and merging the data sets ...   
-    &nbsp;&nbsp;&nbsp;&nbsp;Number of rows in merged data set:  10299    
-    &nbsp;&nbsp;&nbsp;&nbsp;Number of columns in merged data set:  561    
+  Number of rows in merged data set:  10299    
+  Number of columns in merged data set:  561    
    
 Selecting only the columns with mean and std in names. Tidying up the column names to make them more readable ...    
-  &nbsp;&nbsp;&nbsp;&nbsp;Number of rows in lean data set:  10299   
-  &nbsp;&nbsp;&nbsp;&nbsp;Number of columns in lean data set:  81   
+  Number of rows in lean data set:  10299   
+  Number of columns in lean data set:  81   
    
 Creating column headers text file ...   
 Creating and summarizing data sets ...   
-  &nbsp;&nbsp;&nbsp;&nbsp;Total # of rows in the tidy data set is:  10299   
-  &nbsp;&nbsp;&nbsp;&nbsp;Total # of rows in the summarized data set by Subject and Activity is:  180   
+  Total # of rows in the tidy data set is:  10299   
+  Total # of rows in the summarized data set by Subject and Activity is:  180   
    
 Cleaning up environment ...    
 Following objects are in enrvironment for use ...    
-    &nbsp;&nbsp;&nbsp;&nbsp;ColumnHeaders SummaryTidyData TidyData    
+  ColumnHeaders SummaryTidyData TidyData    
     
 Check for ColumnHeaders.txt file for all the column headings    
 Check for TidyData.txt and SummaryTidyData.txt in working directory   
    
+```
   
 ##License     
 
