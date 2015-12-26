@@ -36,9 +36,9 @@ In the original column headers first letter of f in the observation headers was 
 Repetitive occurence of "BodyBody" was changed to "Body".  
 
 Some examples are:  
-tBodyAcc-mean()-X was changed to TimeBodyAccelerometerMeanX  
-tBodyAccMag-std() was changed to TimeBodyAccelerometerMagnitudeStdDev  
-fBodyGyro-std()-X was changed to FreqBodyGyroscopeStdDevX  
+tBodyAcc-mean()-X was changed to `TimeBodyAccelerometerMeanX`  
+tBodyAccMag-std() was changed to `TimeBodyAccelerometerMagnitudeStdDev`  
+fBodyGyro-std()-X was changed to `FreqBodyGyroscopeStdDevX`  
 
 
 
