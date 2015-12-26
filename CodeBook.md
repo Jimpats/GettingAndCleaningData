@@ -32,7 +32,7 @@ Some liberty was taken to keep names little short which deviate from standard pr
 For example "std" was changed to "StdDev" instead of Standard Deviation".  
 Also removed from the names were "(", "-",")".  
 InitCap was applied to column names.  
-In the original column headers first letter of f in the observation headers was indicated of frequency, it was changed to "Freq" and first letter of t in the observation headers was representation of time, it was changed to "Time".  
+In the original column headers first letter of f in the observation headers was representation of frequency, it was changed to "Freq" and first letter of t in the observation headers was representation of time, it was changed to "Time".  
 Repetitive occurence of "BodyBody" was changed to "Body".  
 
 Some examples are:  
